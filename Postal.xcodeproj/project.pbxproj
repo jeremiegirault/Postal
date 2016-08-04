@@ -44,9 +44,12 @@
 		98DB00A01CEC6983003CAABB /* Postal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DB00951CEC6983003CAABB /* Postal.framework */; };
 		98DB04371CEC7337003CAABB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DB04361CEC7337003CAABB /* libz.tbd */; };
 		98DB04391CEC7342003CAABB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DB04381CEC7342003CAABB /* libiconv.tbd */; };
+		F70576531D53790B002FC0E8 /* Postal-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F70576521D53790B002FC0E8 /* Postal-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70576741D537FC6002FC0E8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9812C3491D509B9100630D46 /* Result.framework */; };
+		F70576751D537FC7002FC0E8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9812C3491D509B9100630D46 /* Result.framework */; };
+		F70576771D538780002FC0E8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9812C3491D509B9100630D46 /* Result.framework */; };
 		F71325661D50CA84005DFC15 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71325651D50CA84005DFC15 /* Configuration.swift */; };
 		F71325671D50CA84005DFC15 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71325651D50CA84005DFC15 /* Configuration.swift */; };
-		F75DD4751D4BAC1500D40E9C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75DD4741D4BAC1500D40E9C /* Result.framework */; };
 		F77FF4EF1D082E870036A9A7 /* Postal.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 98DB00951CEC6983003CAABB /* Postal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7F03C781D4BA5A90083397F /* Address+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F039F51D4BA5A70083397F /* Address+Parsing.swift */; };
 		F7F03C7A1D4BA5A90083397F /* CertificateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F039F71D4BA5A70083397F /* CertificateUtils.swift */; };
@@ -129,8 +132,13 @@
 		98DB009F1CEC6983003CAABB /* PostalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DB04361CEC7337003CAABB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		98DB04381CEC7342003CAABB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F70576181D5377E9002FC0E8 /* Postal-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Postal-watchOS.h"; sourceTree = "<group>"; };
+		F705761A1D5377E9002FC0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70576501D53790B002FC0E8 /* Postal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Postal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70576521D53790B002FC0E8 /* Postal-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Postal-tvOS.h"; sourceTree = "<group>"; };
+		F70576541D53790B002FC0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F705766C1D53792F002FC0E8 /* Postal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Postal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71325651D50CA84005DFC15 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		F75DD4741D4BAC1500D40E9C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F039F51D4BA5A70083397F /* Address+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+Parsing.swift"; sourceTree = "<group>"; };
 		F7F039F71D4BA5A70083397F /* CertificateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateUtils.swift; sourceTree = "<group>"; };
 		F7F039F81D4BA5A70083397F /* ContentDisposition+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContentDisposition+Parsing.swift"; sourceTree = "<group>"; };
@@ -173,10 +181,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9812C34A1D509B9100630D46 /* Result.framework in Frameworks */,
 				9812C3511D509DFE00630D46 /* libsasl2.tbd in Frameworks */,
 				9812C34F1D509DF700630D46 /* libz.tbd in Frameworks */,
 				9812C34D1D509DEB00630D46 /* libiconv.tbd in Frameworks */,
-				9812C34A1D509B9100630D46 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75DD4751D4BAC1500D40E9C /* Result.framework in Frameworks */,
+				F70576771D538780002FC0E8 /* Result.framework in Frameworks */,
 				98DB04391CEC7342003CAABB /* libiconv.tbd in Frameworks */,
 				98DB04371CEC7337003CAABB /* libz.tbd in Frameworks */,
 			);
@@ -195,6 +203,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				98DB00A01CEC6983003CAABB /* Postal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F705764C1D53790B002FC0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70576751D537FC7002FC0E8 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70576681D53792F002FC0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70576741D537FC6002FC0E8 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +248,6 @@
 		9812C34B1D509B9C00630D46 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				9812C3491D509B9100630D46 /* Result.framework */,
 				9812C3501D509DFE00630D46 /* libsasl2.tbd */,
 				9812C34E1D509DF700630D46 /* libz.tbd */,
 				9812C34C1D509DEB00630D46 /* libiconv.tbd */,
@@ -238,7 +261,10 @@
 				F7F039F41D4BA5A70083397F /* Postal */,
 				9812C3241D50998E00630D46 /* Postal-iOS */,
 				9812C31D1D50959500630D46 /* Postal-macOS */,
+				F70576511D53790B002FC0E8 /* Postal-tvOS */,
+				F70576171D5377E8002FC0E8 /* Postal-watchOS */,
 				F7F03EF11D4BA5DB0083397F /* PostalTests */,
+				F70576761D538005002FC0E8 /* Supporting files */,
 				98DB00961CEC6983003CAABB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -249,6 +275,8 @@
 				98DB00951CEC6983003CAABB /* Postal.framework */,
 				98DB009F1CEC6983003CAABB /* PostalTests.xctest */,
 				9812C31C1D50959500630D46 /* Postal.framework */,
+				F70576501D53790B002FC0E8 /* Postal.framework */,
+				F705766C1D53792F002FC0E8 /* Postal.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,11 +284,36 @@
 		98DB043E1CEC7FCB003CAABB /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				F75DD4741D4BAC1500D40E9C /* Result.framework */,
 				98DB04381CEC7342003CAABB /* libiconv.tbd */,
 				98DB04361CEC7337003CAABB /* libz.tbd */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F70576171D5377E8002FC0E8 /* Postal-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F70576181D5377E9002FC0E8 /* Postal-watchOS.h */,
+				F705761A1D5377E9002FC0E8 /* Info.plist */,
+			);
+			path = "Postal-watchOS";
+			sourceTree = "<group>";
+		};
+		F70576511D53790B002FC0E8 /* Postal-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				F70576521D53790B002FC0E8 /* Postal-tvOS.h */,
+				F70576541D53790B002FC0E8 /* Info.plist */,
+			);
+			path = "Postal-tvOS";
+			sourceTree = "<group>";
+		};
+		F70576761D538005002FC0E8 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9812C3491D509B9100630D46 /* Result.framework */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 		F75DD5501D4BB19500D40E9C /* Utils */ = {
@@ -394,6 +447,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F705764D1D53790B002FC0E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70576531D53790B002FC0E8 /* Postal-tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70576691D53792F002FC0E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -453,6 +521,42 @@
 			productReference = 98DB009F1CEC6983003CAABB /* PostalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F705764F1D53790B002FC0E8 /* Postal-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70576611D53790B002FC0E8 /* Build configuration list for PBXNativeTarget "Postal-tvOS" */;
+			buildPhases = (
+				F705764B1D53790B002FC0E8 /* Sources */,
+				F705764C1D53790B002FC0E8 /* Frameworks */,
+				F705764D1D53790B002FC0E8 /* Headers */,
+				F705764E1D53790B002FC0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Postal-tvOS";
+			productName = "Postal-tvOS";
+			productReference = F70576501D53790B002FC0E8 /* Postal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F705766B1D53792F002FC0E8 /* Postal-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70576711D53792F002FC0E8 /* Build configuration list for PBXNativeTarget "Postal-watchOS" */;
+			buildPhases = (
+				F70576671D53792F002FC0E8 /* Sources */,
+				F70576681D53792F002FC0E8 /* Frameworks */,
+				F70576691D53792F002FC0E8 /* Headers */,
+				F705766A1D53792F002FC0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Postal-watchOS";
+			productName = "Postal-watchOS";
+			productReference = F705766C1D53792F002FC0E8 /* Postal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -472,6 +576,12 @@
 					98DB009E1CEC6983003CAABB = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					F705764F1D53790B002FC0E8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F705766B1D53792F002FC0E8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 98DB008F1CEC6983003CAABB /* Build configuration list for PBXProject "Postal" */;
@@ -487,8 +597,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98DB00941CEC6983003CAABB /* Postal-iOS */,
 				9812C31B1D50959500630D46 /* Postal-macOS */,
+				98DB00941CEC6983003CAABB /* Postal-iOS */,
+				F705764F1D53790B002FC0E8 /* Postal-tvOS */,
+				F705766B1D53792F002FC0E8 /* Postal-watchOS */,
 				98DB009E1CEC6983003CAABB /* PostalTests */,
 			);
 		};
@@ -510,6 +622,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		98DB009D1CEC6983003CAABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F705764E1D53790B002FC0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F705766A1D53792F002FC0E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -603,6 +729,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F705764B1D53790B002FC0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70576671D53792F002FC0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -637,7 +777,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "-letpan";
 				PRODUCT_BUNDLE_IDENTIFIER = ai.snips.Postal;
-				PRODUCT_NAME = Postal;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/dependencies $(SRCROOT)/dependencies/build/macos/include";
@@ -664,7 +803,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "-letpan";
 				PRODUCT_BUNDLE_IDENTIFIER = ai.snips.Postal;
-				PRODUCT_NAME = Postal;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/dependencies $(SRCROOT)/dependencies/build/macos/include";
@@ -715,7 +853,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				PRODUCT_NAME = Postal;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -764,7 +902,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				PRODUCT_NAME = Postal;
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -796,7 +934,7 @@
 					"-letpan",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.snips.Postal;
-				PRODUCT_NAME = Postal;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/dependencies $(SRCROOT)/dependencies/build/ios/include";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -823,7 +961,7 @@
 					"-letpan",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ai.snips.Postal;
-				PRODUCT_NAME = Postal;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/dependencies $(SRCROOT)/dependencies/build/ios/include";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -850,6 +988,88 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.snips.PostalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F70576621D53790B002FC0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Postal-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.snips.Postal-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		F70576631D53790B002FC0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Postal-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.snips.Postal-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		F70576721D53792F002FC0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Postal-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.snips.Postal-watchOS";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F70576731D53792F002FC0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Postal-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.snips.Postal-watchOS";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -888,6 +1108,24 @@
 			buildConfigurations = (
 				98DB00AD1CEC6983003CAABB /* Debug */,
 				98DB00AE1CEC6983003CAABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70576611D53790B002FC0E8 /* Build configuration list for PBXNativeTarget "Postal-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70576621D53790B002FC0E8 /* Debug */,
+				F70576631D53790B002FC0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70576711D53792F002FC0E8 /* Build configuration list for PBXNativeTarget "Postal-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70576721D53792F002FC0E8 /* Debug */,
+				F70576731D53792F002FC0E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
